@@ -1,0 +1,32 @@
+
+
+.painel_dashboard{
+    width: 15%;
+    height: 100vh;
+    background:  #006df0;
+}
+
+.painel_titulo {padding: 20px 0px; text-align: center;}
+
+.painel_titulo h1{
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.user_imagem{
+    height: 200px; 
+    width: 200px; 
+    margin: 0 auto; 
+    border-radius: 100%; 
+    background: white;
+}
+
+
+.user_name h2{ padding: 20px 0px; text-align: center;}
+.user_name h2{
+    font-size: 18px;
+    color: white;
+    
+}
+

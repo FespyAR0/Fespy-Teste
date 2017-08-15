@@ -1,0 +1,35 @@
+/* Sobre 960px++++*/
+
+.banner.sobre{         
+  background: url("../img/servicos/servbanner2.png") no-repeat center;
+  background-size: cover;
+}
+
+
+.sobre_cont.container{
+    height: 1100px;
+}
+
+.sobre_txt {
+    padding: 60px 0;
+}
+
+.sobre_txt p{
+    font-size: 24px;
+}
+
+.sobre_txt img{
+    background-color: #006df0;
+    height: 450px;
+}
+
+.sobre_txt .parag{
+    clear: both;
+    padding: 40px 0px 0px 0px;
+}
+
+.rodape {
+    clear: both;
+}
+
+/* /Sobre 960px++++ */
