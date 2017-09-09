@@ -1,6 +1,4 @@
-$('.topic-btn').click(function(){
-	$(this).toggleClass('active');
-});
+$('.equipe-home .container > :first').addClass('active');
 
 
 (function(){
@@ -11,7 +9,7 @@ function iniSlide(){
 		nextSlide = activeSlide.next();
 
 	if(nextSlide.length == 0){
-		nextSlide = $('.slide > :first');
+		nextSlide = $('.equipe-home .container > :first');
 	}
 
 	activeSlide.removeClass('active');
