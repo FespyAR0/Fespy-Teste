@@ -41,6 +41,7 @@ img { display: block; max-width: 100%;}
     font-size: 48px; 
     font-weight: 600;
     padding: 10px 0px;
+    text-align: center;
 }
 
 .titulo-1 {color: #006DF0; }
@@ -58,10 +59,11 @@ p{ font-size: 14px;  line-height: 1.6em;}
     font-size: 14px;
     text-align: center;
     padding: 10px;
+    font-weight: 600;
 }
 
 .call_to_1{
-    border: 1px solid white;
+    border: 2px solid white;
     color: white;
 }
 
@@ -70,7 +72,7 @@ p{ font-size: 14px;  line-height: 1.6em;}
 }
 
 .call_to_2{
-    border: 1px solid #006DF0;
+    border: 2px solid #006DF0;
     color: #006DF0;
 }
 
@@ -105,7 +107,6 @@ p{ font-size: 14px;  line-height: 1.6em;}
 
 
 /* INTRO HOME */
-.intro-home .titulo-2{ text-align: center;}
 
 .intro-home{ padding: 20px 0px; 
     width: 100%;
@@ -139,13 +140,19 @@ p{ font-size: 14px;  line-height: 1.6em;}
     line-height: 2em;
     color: #777;
 }
+
+.sobre-home .youtube-video{
+    margin: 20px 0px;
+    width: 100%;
+    height: 300px;
+}
 /* FECHA SOBRE - HOME */
 
 
  /* INTRO - SPAN */
-.intro-span{ padding: 20px 0px;}
+.intro-span{ padding: 20px 0px 40px 0px;}
 
-.intro-span .titulo-1{ text-align: center; margin-bottom: 20px;}
+.intro-span .titulo-1{ margin-bottom: 20px;}
 
 .intro-span span{
     font-size: 18px;
@@ -213,6 +220,47 @@ p{ font-size: 14px;  line-height: 1.6em;}
 /* FECHA INTRO - SPAN */
 
 
+/* BLOG - HOME */
+
+.blog-home{ padding: 20px 0px 40px;}
+
+.blog-home .titulo-1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.blog-post{ margin: 15px 0px;}
+
+.blog-post.breve span{
+    background: #777;
+}
+
+.blog-post span{
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 15px 10px;
+    background: #006DF0;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: white;
+}
+
+.blog-post p{
+    width: 100%;
+    padding: 15px;
+    color: white;
+    background: rgba(0,109,240,.8) 
+}
+
+
+
+/* FECHA BLOG - HOME*/
+
+
+
+
+
 /* EQUIPE - HOME */
 
 .equipe-home{ 
@@ -221,7 +269,7 @@ p{ font-size: 14px;  line-height: 1.6em;}
     overflow: hidden;
 }
 
-.equipe-home .titulo-2{ text-align: center; margin-bottom: 20px;}
+.equipe-home .titulo-2{margin-bottom: 20px;}
 
 .slide{ 
   margin: 0 auto; 
@@ -260,7 +308,29 @@ p{ font-size: 14px;  line-height: 1.6em;}
 
 
 
-/* EQUIPE - BLOG - HOME */
+/* FECHA EQUIPE - HOME */
+
+
+
+/* SOCIAL - HOME */
+.social-home{ padding: 20px 0px 40px 0px;}
+.social-home .titulo-1{
+    margin: 20px 0;
+}
+
+.post-social iframe{
+    height: 300px;
+}
+
+.post-social h2{
+    width: 100%;
+    padding: 15px;
+    font-weight: 600;
+    color: #006DF0;
+}
+
+
+/* FECHA SOCIAL - HOME*/
 
 
 
