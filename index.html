@@ -1,255 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<title>Fespy</title>
+<html lang="pt_br">
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsivo.css">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/grid1090.css">
-		<link rel="stylesheet" href="css/style.css"> 
-		<link rel="stylesheet" href="css/max767.css"> 
-		<link rel="stylesheet" href="css/max959.css"> 
-		
-        <script src="js/libs/modernizr.custom.45655.js"></script>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=greek" rel="stylesheet">
-	</head>
-	<body>
-        <!-- Cabecalho -->
-        <header class="headerbg">
-        <div class="header">
+</head>
+<body>
 
-         <div class="logo">
-			    <img srcset="img/icones/logo_1.png" alt="Fespy Logo">
-        </div>
+<header class="app-top-header">
 
-        <div class="mobile-menu">
-        	<input type="checkbox" id="bt_menu">
-            <label class="check_menu" for="bt_menu"><span class="mobile-btn"></span></label>
-        </div>
+    <div class="logo">
+        <img src="img/logo.svg" alt=""/>
+    </div>
+    
+    <label class="check_menu" for="bt_menu">
+            <span class="mobile-btn"></span>
+        </label>
+        <input type="checkbox" id="bt_menu">
+    <div class="menu-top">
+        <a href="#">Início</a>
+        <a href="#">Valores</a>
+        <a href="#">Produtos</a>
+        <a href="#">Quem Somos</a>
+        <a href="#">Contato</a>
+        <a class="acess" href="#"><span>Painel de Acesso</span></a>
+    </div>
+</header>
+    
+<section class="intro-home">
+    <div class="container">
+    <h1 class="titulo-2">O futuro é agora!</h1>
+    <p class="parag-1">Tecnologia eficiente para redução de gastos. Participe desta experiência, qualidade e satisfação em apenas um toque.</p>
+    <img src="img/intro_phone.png" alt=""/>
+        
+    <p class="parag-2">Tudo isso em apenas um clique, é simples e fácil. Confie no nosso trabalho, prometemos qualidade absoluta a você! </p>
+        
+    <a class="call_to_1" href="#">Experimente já</a>
+        
+    
+    </div>
+</section>
 
-        <nav class="header_menu">
-        <ul>
-        <li><a href="index.html" title="Página Inicial">Início</a></li>
-        <li><a href="servicos.html" title="Página Institucional">Serviços</a></li>
-        <li><a href="produtos.html" title="Página de Produtos">Produtos</a></li>
-        <li><a href="#" title="Página sobre o Aplicativo">Aplicativo</a></li>
-        <li><a href="sobre.html" title="Sobre a Fespy">Sobre</a></li>
-        <li><a href="sobre.html" title="Sobre a Fespy"><span>Login</span></a></li>
-        </ul>
-        </nav>
-            
-        </div>
-       </header>
+    
+<section class="intro-span">
+    <h1 class="titulo-1">Eficiência</h1>
+    
+    <div class="container">
+        
+    <input type="checkbox" class="span-input" id="span-A">
+    <div class="span-wrapper">
+    <label for="span-A">
+        <span class="span-titulo">Plataforma Facilitadora</span>
+    </label>
+    <img src="img/toque-celular.png">
+    <p class="span-conteudo">Plataforma facilitadora, acesso completo em apenas um toque no celular.</p>
+    </div>
+          
+        
+    <input type="checkbox" class="span-input" id="span-B">
+    <div class="span-wrapper">
+    <label for="span-B">
+        <span class="span-titulo">Tempo Real</span>
+    </label>
+    <img src="img/graficos.png">
+    <p class="span-conteudo">Dados transmitidos totalmente em tempo real, total acessibilidade e conforto.</p>
+    </div>
 
-        <!-- Banner -->
-        <section class="banner inicio">
-            
-        	<div class="container">
-             <div class="banner_imagem">
-        	<img class="grid-6 flutuar" src="img/inicio/celularbanner2.png" alt="Aplicativo">
-        	</div>
-                
-        	<div class="banner_texto grid-6">
-        	
-        	<h1>O futuro é agora!</h1>
-        	<p>Tecnologia eficiente para redução de gastos. Participe desta experiência, qualidade e satisfação em apenas um toque.</p>
-        	<div id="call" class="call">
-			<a href="produtos.html">Produtos</a>
-			</div>
-
-        	</div>
-                
-        	</div>
-            
-        </section>
-         
-
-         <!-- Intro -->
-		<section class="intro container">
-			<div class="qualidade titulo anime">
-			<h1>Eficiência</h1>
-			</div>
-			<div class="qualidadeitems anime">
-			<div class="qualiitem intro_small">
-				<ul class="grid-4">
-					<li><img src="img/inicio/ambiente.png" alt="Meio Ambiente"></li>
-					<li><p>Tecnologia preservando a natureza, reduzindo custos e <span>transformando vidas</span>.</p></li>
-				</ul>
-			</div>
-			<div class="qualiitem intro_normal">
-				<ul class="grid-4">
-					<li><img src="img/inicio/dados.png" alt="Gráficos"></li>
-					<li><p>Dados transmitidos totalmente em <span>tempo real</span>, total acessibilidade e conforto.</p></li>
-				</ul>
-			</div>
-			<div class="qualiitem intro_small">
-				<ul class="grid-4">
-					<li><img src="img/inicio/toque.png" alt="Aplicativo Celular"></li>
-					<li><p>Plataforma facilitadora, acesso completo <span>em apenas um toque no celular</span>.</p></li>
-				</ul>
-			</div>
-            </div>
-			<div id="call" class="call anime">
-			<a href="#">Aplicativo</a>
-			</div>
-	</section>
-
-		<section class="prodx">
-			<div class="container">
-			<div class="qualidade titulo anime">
-			<h1>Produtos</h1>
-			</div>
-			<div class="btns anime">
-			<div class="btn_mi grid-6">
-			<span>Módulo Interruptor</span>
-			</div>
-
-			<div class="btn_md grid-6">
-			<span>Monitor. Energético</span>
-			</div>
-			</div>
-
-			<div class="conteudo mi anime">
-			<div class="foto grid-6">
-				<img src="img/inicio/prod1teste.png">
-			</div>
-			<div class="prodtxt grid-6">
-				<p>Permite o controle de acionamentos de dispositivos eletrônicos no interior de sua residência, podendo ligar, desligar e definir horários de funcionamento de quaisquer lugar, por meio de conexão Wireless, através de celulares, computadores e tablets.</p>
-			</div>
-			</div>
-                
-            <div class="conteudo md anime">
-			<div class="foto grid-6">
-				<img src="img/inicio/prod1teste.png">
-			</div>
-			<div class="prodtxt grid-6">
-				<p>Permite o controle de acionamentos de dispositivos eletrônicos no interior de sua residência, podendo ligar, desligar e definir horários de funcionamento de quaisquer lugar, por meio de conexão Wireless, através de celulares, computadores e tablets.</p>
-			</div>
-			</div>    
-			</div>
-
-			<div id="call" class="call anime">
-			<a href="produtos.html">Produtos</a>
-			</div>
+        
+    <input type="checkbox" class="span-input" id="span-C">
+    <div class="span-wrapper">
+    <label for="span-C">
+        <span class="span-titulo">Essencial</span>
+    </label>
+    <img src="img/ambiente.png">
+    <p class="span-conteudo">É questão de necessidade, auxiliamos na melhoria de seus gastos.</p>
+    </div>
+        
+    </div>
+</section>
+    
 
 
-		</section>
 
 
-			<!-- Especialidades -->
-			<section class="especialidades container">
-			<div class="nos_especialidades titulo anime">
-			<h1>Especialidades</h1>
-			</div>
-				<div class="especiali_autor especiali_item anime">
-                    <!-- especi automa imagem -->
-                    <div class="especi_img grid-5">
-					<img src="img/inicio/especiteste.png" alt="Automação Residencial">
-                    </div>
-                     <!-- especi automa texto -->
-					<div class="especi_texto grid-7">
-                    <h2>Automação Residencial</h2>
-					<p>A fespy possui total responsabilidade em fornecer conforto, acessibilidade e satisfação ao cliente. Através da Automação Residêncial, conseguimos ter um contato mais direto ao cliente, ajudando-o no dia a dia ...</p>
-					</div>
-                    
-				</div>
 
-				<div class="especiali_monitor especiali_item anime">
-                    <!-- especi monitor texto -->
-					<div class="especi_texto grid-7">
-				    <h2>Monitoramento de Energia</h2>
-                    <p> Monitoramento energético de eletrodomésticos, levantamento de dados em tempo real em prol da redução de gastos.</p>
-					</div>
-                    <!-- especi monitor imagem -->
-                    <div class="especi_img grid-5">
-					<img src="img/inicio/especiteste.png" alt="Monitoramento de Energia">
-                    </div>
-				</div>
 
-			<div id="call" class="call anime">
-			<a href="servicos.html">Serviços</a>
-			</div>
-			</section>
-
-			<!-- Equipe -->
-
-			<section class="equipe container">
-				<div class="nossa_equipe titulo anime">
-				<h1>Nossa Equipe</h1>
-				</div>
-				<div class="equipe_texto grid-12 anime">
-                    <p> A <span>FESPY</span> surgiu em uma Feira de Ciências escolar, através de uma experiência em grupo decidimos tornar ideias em realidade, ideias inovadoras com o objetivo de melhorar a qualidade de vida das pessoas.</p>
-                        
-                    <p>À busca pelo bem-estar, proporcionaremos o futuro diante dos seus olhos, tudo isso com tecnologia.</p>
-				</div>
-				<div class="equipe_img grid-12 anime">
-					<img src="">
-				</div>
-				
-				<div id="call" class="call anime">
-			<a href="sobre.html">Sobre</a>
-			</div>
-			</section>
-		
-			<footer class="rodape">
-				<div class="container">
-
-				<div class="apoie grid-3">
-					<ul>
-						<li><h3 class="titulorodap">Apoie a Fespy!</h3></li>
-						<li><p>Ajude esta idéia empreendedora!</p></li>
-                        <li><a href="#">www.blablabla.com</a></li>
-					</ul>
-				</div>
-
-				<div class="contato grid-3">
-					<ul>
-                        <li><h3 class="titulorodap">Contato</h3></li>
-						<li><p>fespyautomr@gmail.com</p>
-					</ul>
-				</div>
-
-				<div class="menu_foot grid-3">
-					<ul>
-                        <li><h3 class="titulorodap">Menu</h3></li>
-						<li><a href="index.html" title="Página Inicial">Início</a></li>
-				        <li><a href="servicos.html" title="Página Institucional">Serviços</a></li>
-				        <li><a href="produtos.html" title="Página de Produtos">Produtos</a></li>
-				        <li><a href="#" title="Página sobre o Aplicativo">Aplicativo</a></li>
-				        <li><a href="sobre.html" title="Sobre a Fespy">Sobre</a></li>
-					</ul>
-				</div>
-
-				<div class="social grid-3">
-					<ul>
-						<li><h3 class="titulorodap ">Social</h3></li>
-                      
-					</ul>
-				</div>
-				</div>
-				<div class="prod">
-				<div class="container">
-					<p >Fespy © 2017 Todos os direitos Reservados.</p>
-				</div>
-			</div>
-			</footer> 
-			
 
 	
-
-		
-
-<!-- JavaScript -->
-	<script src="js/libs/jquery-3.2.1.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
 	<!-- JavaScript -->
+	<script src="js/libs/jquery-3.2.1.min.js"></script>
+	<script src="js/main.js"></script>
 
-	</body>
+</body>
 </html>
