@@ -27,12 +27,18 @@ h1, h2, h3, h4, h5, h6, p, a, ul {
 
 /* FECHA RESET */
 
+
+
 /* IMAGEM RESPONSIVA */
 img { display: block; max-width: 100%;}
 
+/* FECHA IMAGEM RESPONSIVA */
+
+
+
 /* GERAL */
 .titulo-1, .titulo-2{
-    font-size: 60px; 
+    font-size: 48px; 
     font-weight: 600;
     padding: 10px 0px;
 }
@@ -40,7 +46,7 @@ img { display: block; max-width: 100%;}
 .titulo-1 {color: #006DF0; }
 .titulo-2 {color: white;}
 
-p{ line-height: 1.6em;}
+p{ font-size: 14px;  line-height: 1.6em;}
 
 .parag-1{text-align: left;}
 .parag-2{text-align: right;}
@@ -49,7 +55,7 @@ p{ line-height: 1.6em;}
     display: block;
     margin: 30px auto;
     width: 160px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     padding: 10px;
 }
@@ -71,6 +77,10 @@ p{ line-height: 1.6em;}
 .call_to_2:hover{
     background: rgba(0,109,140,.1);
 }
+
+/* FECHA GERAL */
+
+
 /* MENU */
 
 .logo img{ 
@@ -90,6 +100,8 @@ p{ line-height: 1.6em;}
         background: #006DF0;
     }
 
+
+/* FECHA MENU */
 
 
 /* INTRO HOME */
@@ -114,14 +126,29 @@ p{ line-height: 1.6em;}
     width: 300px; 
     margin: 40px auto; }
 
+/* FECHA INTRO HOME */
+
+
+/* SOBRE - HOME */
+.sobre-home{ padding: 30px 0px;}
+
+.sobre-home .titulo-1{ text-align: center;}
+
+.sobre-home p{ 
+    text-align: center; 
+    line-height: 2em;
+    color: #777;
+}
+/* FECHA SOBRE - HOME */
+
 
  /* INTRO - SPAN */
 .intro-span{ padding: 20px 0px;}
 
-.intro-span .titulo-1{ text-align: center;}
+.intro-span .titulo-1{ text-align: center; margin-bottom: 20px;}
 
 .intro-span span{
-    font-size: 14px;
+    font-size: 18px;
     display: block;
     line-height: 2em;
     font-weight: 500;
@@ -137,7 +164,7 @@ p{ line-height: 1.6em;}
     display: none;
     font-size: 14px;
     height: 100px;
-    color: #006DF0;
+    color: #777777;
     padding: 20px;
     margin-bottom: 20px;
     font-weight: 300;
@@ -161,7 +188,7 @@ p{ line-height: 1.6em;}
     width: 25px;
     border-radius: 100%;
     background: url(../img/before_span.svg)no-repeat;
-    margin: 2px 0;
+    margin: 5px 0;
     float: right;
     transition: .3s;
 }
@@ -183,8 +210,55 @@ p{ line-height: 1.6em;}
 }
 
 
-/**/
+/* FECHA INTRO - SPAN */
 
+
+/* RODAPÉ */
+.rodape{
+    margin-top: 20px;
+    padding-top: 20px;
+    background: #006DF0;
+}
+
+.logo-footer img{
+    height: 40px;
+    margin: 10px auto;
+}
+
+.menu-footer a{
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    padding: 10px 0px;
+    color: rgba(255,255,255,.8);
+    margin: 10px;
+}
+
+.follow{margin: 30px 0px;}
+
+.follow span{
+    font-weight: 600; 
+    color: white;
+    display: block; 
+    text-align: center;
+    margin-bottom: 20px;
+ }
+
+.follow a{
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 20px 0px 20px;
+    color: rgba(255,255,255,.8);
+}
+
+.copyright{
+    font-size: 10px;
+    width: 100%;
+    padding: 15px 0px;
+    text-align: center;
+    color: rgba(255,255,255,.8);
+    background: rgba(0,80,240,1)
+}
 
 
 
@@ -192,6 +266,21 @@ p{ line-height: 1.6em;}
     clear: both;
     margin: 40px auto 0px auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 959px){
 
