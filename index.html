@@ -1,171 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html>
 <head>
-	<title></title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	
-	<link rel="stylesheet" href="css/grid.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/responsivo.css">
-
+    <title>Fespy</title>
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsivo.css">
+    <link rel="stylesheet" type="text/css" href="css/anima.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<header class="app-top-header">
+<script type="text/javascript">
+        document.documentElement.className += 'js';
+    </script>
 
+    <nav class="nav">
     <div class="logo">
         <img src="img/logo.svg" alt=""/>
     </div>
-    
-    <label class="check_menu" for="bt_menu">
-            <span class="mobile-btn"></span>
-        </label>
-        <input type="checkbox" id="bt_menu">
-    <div class="menu-top">
-        <a href="#">Início</a>
-        <a href="#">Valores</a>
-        <a href="#">Produtos</a>
-        <a href="#">Quem Somos</a>
-        <a href="#">Contato</a>
-        <a class="acess" href="#"><span>Painel de Acesso</span></a>
-    </div>
-</header>
-    
-<section class="intro-home">
-    <div class="container">
-    <h1 class="titulo-2">Fespy ©</h1>
-    <p class="parag-1">Tecnologia eficiente para redução de gastos. Participe desta experiência, qualidade e satisfação em apenas um toque.</p>
-    <img src="img/intro_phone.png" alt=""/>
-        
-    <p class="parag-2">Tudo isso em apenas um clique, é simples e fácil. Confie no nosso trabalho, prometemos qualidade absoluta a você! </p>
-        
-    <a class="call_to_1" href="#">Saiba mais!</a>
-        
-    
-    </div>
-</section>
+    <label class="check-mobile" for="toggle"><span class="mobile-btn"></span></label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+            <a href="#">Site</a>
+            <a href="#">Blog</a>
+            <a href="#">Contato</a>
+            <a href="#"><span>Login</span></a>
+        </div>
+    </nav>
 
-<section class="sobre-home container">
+    <div class="menu-pdes">
+    <span class="pdes-btn"></span>
+    <a href="">
+    <div class="menu-wrapper des-1">
+    <img src="img/inicio.svg" data-anime="flutuar">
+    <h2>Site</h2>
+    <span>Deseja navegar pelo site? Clique aqui</span>
+    </div> 
+    </a>
+    <a href="">
+    <div class="menu-wrapper des-2">
+    <img src="img/blog.svg" data-anime="flutuar">
+    <h2>Blog</h2>
+    <span>Veja as principais posts, notícias, videos, entre outras atividades de nossa startup.</span>
+    </div>
+    </a>  
+    <a href=""> 
+    <div class="menu-wrapper des-3">
+    <img src="img/contato.svg" data-anime="flutuar">
+    <h2>Contato</h2>
+    <span>Deseja entrar em contato conosco? Envie-nos uma mensagem pela nossa plataforma ou por e-mail, clique aqui, sinta-se a vontade!</span>
+    </div>  
+    </a>
+    <a href="">
+    <div class="menu-wrapper des-4">
+    <img src="img/login.svg" data-anime="flutuar">
+    <h2>Efetuar Login</h2>
+    <span>Se você é usuário e já possui a Fespy como parceira, basta efetuar o login e terá total acesso ao controle de seus equipamentos.</span>
+    </div> 
+    </a>
+    </div>   
+
+    <section class="intro-home">
+        <div class="container">
+        <h1 class="titulo-2">Fespy ©</h1>
+        <p class="align-3 grid-12">Tecnologia eficiente para redução de gastos. Participe desta experiência, qualidade e satisfação em apenas um toque.</p>
+        <img class="grid-12" src="img/celular.svg"/>
+        <p class="align-2 grid-12">Tudo isso em apenas um clique, é simples e fácil. Confie no nosso trabalho, prometemos qualidade absoluta a você! </p>
+        <a class="call_to_1" href="#">Saiba mais!</a>
+    </section>
+
+   <section class="sobre-home container">
     <h1 class="titulo-1">Somos uma Startup...</h1>
-    <p>Tecnologia eficiente para redução de gastos. Participe desta experiência, qualidade e satisfação em apenas um toque.Tecnologia eficiente para redução de gastos. Participe desta experiência, qualidade e satisfação em apenas um toque.Tecnologia eficiente para redução de gastos. Participe desta experiência, qualidade e satisfação em apenas um toque.</p>
-    
-    <iframe class="youtube-video" src="https://www.youtube.com/embed/_vA09V0F4kg" frameborder="0" allowfullscreen></iframe>
-</section>
-    
-<section class="intro-span">
-    <h1 class="titulo-1">Diferencial</h1>
-    
-    <div class="container">
-        
+    <p class="grid-12">A FESPY surgiu em uma Feira de Ciências escolar, através de uma experiência em grupo decidimos tornar ideias em realidade, ideias inovadoras com o objetivo de melhorar a qualidade de vida das pessoas.
+À busca pelo bem-estar, proporcionaremos o futuro diante dos seus olhos, tudo isso com tecnologia.</p>
+   </section>
+
+    <section class="intro-span container">
+    <h1 class="titulo-1">Diferencial</h1>        
     <input type="checkbox" class="span-input" id="span-A">
-    <div class="span-wrapper">
+    <div class="span-wrapper grid-4">
     <label for="span-A">
         <span class="span-titulo">Plataforma Facilitadora</span>
     </label>
-    <img src="img/toque-celular.png">
+    <img src="img/toque-celular.svg">
     <p class="span-conteudo">Plataforma facilitadora, acesso completo em apenas um toque no celular.</p>
     </div>
           
         
     <input type="checkbox" class="span-input" id="span-B">
-    <div class="span-wrapper">
+    <div class="span-wrapper grid-4">
     <label for="span-B">
         <span class="span-titulo">Tempo Real</span>
     </label>
-    <img src="img/graficos.png">
+    <img src="img/graficos.svg">
     <p class="span-conteudo">Dados transmitidos totalmente em tempo real, total acessibilidade e conforto.</p>
     </div>
 
         
     <input type="checkbox" class="span-input" id="span-C">
-    <div class="span-wrapper">
+    <div class="span-wrapper grid-4">
     <label for="span-C">
         <span class="span-titulo">Essencial</span>
     </label>
-    <img src="img/ambiente.png">
+    <img src="img/ambiente.svg">
     <p class="span-conteudo">É questão de necessidade, auxiliamos na melhoria de seus gastos.</p>
     </div>
-        
-    </div>
-</section>
-    
-<section class="blog-home">
-    <h1 class="titulo-1">Blog</h1>
-    <div class="container">
-    
-    <a href="#">
-        <div class="blog-post">
-        <span>Sinapse da Inovação -  1ª Fase</span>
-        <p>É questão de necessidade, auxiliamos na melhoria de seus gastos.</p>
-        </div>
-    </a>
-        
-    <a href="#">
-        <div class="blog-post">
-        <span>Sinapse da Inovação - 2ª Fase</span>
-        <p>É questão de necessidade, auxiliamos na melhoria de seus gastos.</p>
-        </div>
-    </a>
-        
 
-        <div class="blog-post breve">
-        <span>Sinapse da Inovação - 3ª Fase (Em breve)</span>
-        </div>
-        
         
     </div>
 </section>
-    
-<section class="equipe-home">
-    <h1 class="titulo-2">Equipe</h1>
-    <div class="container">
-        
-    <div class="slide_item">
-        <img src="img/fábio.jpg">
-        <h2>Fábio Alvarenga</h2>
-        <span>Fundador/Desenvolvedor</span>
-    </div>
-        
-    <div class="slide_item">
-        <img src="img/ezequiel.jpg">
-        <h2>Ezequiel Demetras</h2>
-        <span>Fotógrafo</span>
-    </div>
-    
-    <div class="slide_item">
-        <img src="img/samya.jpg">
-        <h2>Samya Miranda</h2>
-        <span>Fundador/Desenvolvedor</span>
-    </div>
-        
-    <div class="slide_item">
-        <img src="img/paulo.jpg">
-        <h2>Paulo Serpa</h2>
-        <span>Fundador/Desenvolvedor</span>
-    </div>
 
-    </div> 
-    
-    </div>
-    <a class="call_to_1" href="">Ir para Equipe</a>
-    
-</section>
-    
-    
-<section class="social-home">
-    <h1 class="titulo-1">Social</h1>
-    <div class="container">
-    <div class="post-social">
-    <iframe src="https://www.youtube.com/embed/dbz8CMMicUg" frameborder="0" allowfullscreen></iframe>
-    <h2>Tutorial - Código Blink (Arduino)</h2>
-    </div>
-    </div>
-</section>
-    
-<footer class="rodape">
+    <section class="equipe-home">
+
+    </section>
+
+
+    <footer class="rodape">
     <div class="container">
         <div class="logo-footer">
             <img src="img/logo.svg">
@@ -178,27 +129,22 @@
         <a href="#">Contato</a>
         <a href="#">Painel de Acesso</a>
     </div>
-    <div class="follow">
-        <span>Siga-nos</span>
-        <a href="#">Facebook</a>
-        <a href="#">Youtube</a>
-        <a href="#">Instagram</a>
+    <div class="follow grid-12">
+        <span>Siga a Fespy!</span>
+        <a href="#"><img src="img/facebook-icon.png"></a>
+        <a href="#"><img src="img/youtube-icon.png"></a>
+        <a href="#"><img src="img/linkedin-icon.png"></a>
+        <a href="#"><img src="img/instagram-icon.png"></a>
     </div>
     </div>
     <p class="copyright">Fespy © 2017 Todos os direitos Reservados.</p>
 </footer>
-    
 
 
-
-
-
-
-
-	
-	<!-- JavaScript -->
-	<script src="js/libs/jquery-3.2.1.min.js"></script>
-	<script src="js/main.js"></script>
+<!-- JavaScript -->
+    <script src="js/libs/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>

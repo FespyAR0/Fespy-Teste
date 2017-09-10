@@ -1,0 +1,72 @@
+
+.js .intro-home .titulo-2{ 
+	opacity: 0; 
+	transform: translate3d(0,50px,0);
+	transition: 2s;
+}
+
+.js .intro-home .titulo-2.active{
+	transform: translate3d(0,0,0);
+	transition: 1s;
+	opacity: 1;
+ }
+
+.js .intro-home .align-3{ 
+	opacity: 0;  
+	transform: translate3d(50px,0,0); 
+	transition: 1.5s;
+}
+
+.js .intro-home .align-3.active{ 
+	opacity: 1;  
+	transform: translate3d(0,0,0); 
+	transition: 1s;
+}
+
+.js .intro-home .align-2{ 
+	opacity: 0;  
+	transform: translate3d(-50px,0,0); 
+	transition: 1.5s;
+}
+
+.js .intro-home .align-2.active{ 
+	opacity: 1;  
+	transform: translate3d(0,0,0); 
+	transition: 1s;
+}
+
+
+.js .intro-home img{
+	opacity: 0;
+	transform: translate3d(0,200px,0);
+}
+
+.js .intro-home img.active{
+	opacity: 1;
+	transform: none;
+	transition: 1.3s ease-in-out;
+}
+
+
+[data-anime="flutuar"] {
+    
+    animation: flutuar 3s ease-in-out 0s infinite;
+}
+
+@keyframes flutuar {
+  from{
+      transform: translate3d(0px,-15px,0px);
+  }
+
+    50% {
+        transform: translate3d(0px,15px,0px);
+    }
+
+  75%, {
+    transform: translate3d(0px,-15px,0px);
+  }
+    
+    100% {transform: translate3d(0px,-15px,0px);}
+}
+
+
