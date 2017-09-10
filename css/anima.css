@@ -36,18 +36,6 @@
 }
 
 
-.js .intro-home img{
-	opacity: 0;
-	transform: translate3d(0,200px,0);
-}
-
-.js .intro-home img.active{
-	opacity: 1;
-	transform: none;
-	transition: 1.3s ease-in-out;
-}
-
-
 [data-anime="flutuar"] {
     
     animation: flutuar 3s ease-in-out 0s infinite;

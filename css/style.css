@@ -9,9 +9,6 @@ html, body {
     margin: 0;
 }
 
-body{ 
-}
-
 html {
     font-family: "Montserrat", sans-serif;
 }
@@ -154,7 +151,7 @@ p { font-size: 18px;  line-height: 1.6em;}
     font-weight: normal;
     text-align: center; 
     line-height: 2em;
-    color: #B7B7B7;
+    color: #555;
 }
 
 .sobre-home .youtube-video{

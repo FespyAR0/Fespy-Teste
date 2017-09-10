@@ -34,14 +34,6 @@ Visibility.onVisible(function(){
 	setTimeout(function () {
 		$(".intro-home .align-2").addClass("active");
 	}, 1400);
-
-	setInterval(function () {
-		$(".intro-home img").addClass("active");
-	}, 3300);
-
-	setInterval(function () {
-		$(".intro-home img").attr("data-anime", "flutuar");
-	}, 3000);
 });
 
 

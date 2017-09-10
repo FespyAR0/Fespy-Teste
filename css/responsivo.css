@@ -152,7 +152,7 @@
 .titulo-1 {color: #006DF0; }
 .titulo-2 {color: white;}
 
-p{ font-size: 12px;}
+p{ font-size: 14px;}
 
 .parag-1{text-align: left;}
 .parag-2{text-align: right;}
@@ -255,7 +255,7 @@ p{ font-size: 12px;}
 
 
 .sobre-home p{ 
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
 }
 
@@ -267,6 +267,23 @@ p{ font-size: 12px;}
     margin: 4px auto;
     width: 30px;
     background: white;
+    transition: .5s;
+}
+
+.mobile-btn.active{ border-top-color: transparent; }
+
+.mobile-btn.active::after {
+  margin-top: -6px;
+  top: 2px;
+  transform: rotate(45deg);
+  transition: .5s;
+}
+
+.mobile-btn.active::before {
+  margin-top: 0px;
+  top: 8px;
+  transform: rotate(135deg);
+  transition: .5s;
 }
 
 
@@ -303,7 +320,7 @@ p{ font-size: 12px;}
 
 .intro-span p{
     display: none;
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     padding: 10px 10px;
     font-weight: 300;
