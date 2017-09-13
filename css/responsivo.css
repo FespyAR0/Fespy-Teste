@@ -6,16 +6,12 @@
     width: 100%;
     clear: left;
     z-index: 1;
-    background: rgba(255,255,255,0);
     transition: 1s;
 }
 
 .menu-pdes.active{
     position: fixed; 
     height: 100vh; 
-    background: url(../img/background.svg) no-repeat;
-    background-size: cover;
-    background-color:#006df0 ;
     z-index: 2;
     transition: 1s;
 }
@@ -50,10 +46,10 @@
 .pdes-btn{ 
     position: absolute;
     right: 40px;
-    top: -70px;
+    top: -65px;
     float: right;
     width: 40px;
-    border-top: 4px solid white; 
+    border-top: 2px solid white; 
     cursor: pointer;
     transition: .6s;
     opacity: 1;
@@ -63,7 +59,7 @@
 .pdes-btn::before, .pdes-btn::after{
     content: '';
     display: block;
-    height: 4px;
+    height: 2px;
     width: 40px;
     background: white;
     margin: 6px auto;
@@ -207,13 +203,15 @@ p{ font-size: 14px;}
 
 	
     .nav{
+        position: fixed;
     	height: 60px;
-    	transition: 2s;
+    	transition: 1.3s;
+        z-index: 5;
+        overflow-y: hidden;
     }
 
     .nav.active{
-    	height: 100vh;
-        z-index: 5;
+    	height: 100%;
         transition: 2s;
     }
 
@@ -229,9 +227,10 @@ p{ font-size: 14px;}
         cursor: pointer;
     }
     .menu {
-    	display: block;
+        display: block;
         text-align: center;
         width: 100%;
+        transition: 1s;
     }
 
     .menu a {
@@ -245,7 +244,7 @@ p{ font-size: 14px;}
 }
 
     .mobile-btn{
-    margin: 20px 20px 15px 20px;
+    margin: 22.5px 20px 15px 20px;
     height: 30px;
     width: 30px;
     display: block;
@@ -301,6 +300,19 @@ p{ font-size: 14px;}
     margin: 10px;
 }
     
+/* INTRO - HOME */
+
+video{
+top: 50%;
+}
+
+.intro-home{ padding: 80px 0; }
+
+
+
+
+/* FECHA INTRO - HOME */
+
 
 /* INTRO - SPAN */
 .intro-span{ padding: 0px 0px 40px 0px;}

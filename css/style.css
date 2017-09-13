@@ -11,6 +11,7 @@ html, body {
 
 html {
     font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -62,11 +63,14 @@ p { font-size: 18px;  line-height: 1.6em;}
     padding: 10px;
     font-weight: 600;
     text-decoration: none;
+    border-radius: 50px;
 }
 
 .call_to_1{
     border: 2px solid white;
     color: white;
+    position: relative;
+    z-index: 4;
 }
 
 .call_to_1:hover{
@@ -93,7 +97,7 @@ p { font-size: 18px;  line-height: 1.6em;}
 /* MENU MOBILE - OFF*/
 .nav {
     height: 100px;
-    background: #006DF0;
+    background-color: rgba(0,109,240,.9);
     width: 100%;
 }
 
@@ -113,15 +117,23 @@ p { font-size: 18px;  line-height: 1.6em;}
 /* MENU MOBILE - OFF*/
 
 /* INTRO - HOME */
+.bg-intro{ position: relative; top: 0; width: 100%; background-color: rgba(0,109,240,.9);}
+
 .intro-home{ padding: 40px 0px; 
-    width: 100%;
-    background: url(../img/background.svg) no-repeat;
-    background-size: cover;
-    background-color:#006df0 ;
-    position: relative;
-    z-index: 1;
+    width: 100%; z-index: 2;
 }
 
+video{
+position: absolute;
+top: 40.75%;
+left: 50%;
+transform: translate(-50%,-50%);
+min-width: 100%;
+min-height: 100%;
+height: auto;
+width: auto;
+z-index: -1;
+}
 
 .intro-home p{ 
     display: block;
