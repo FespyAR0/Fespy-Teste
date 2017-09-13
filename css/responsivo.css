@@ -204,6 +204,7 @@ p{ font-size: 14px;}
 	
     .nav{
         position: fixed;
+        width: 100vh;
     	height: 60px;
     	transition: 1.3s;
         z-index: 5;
