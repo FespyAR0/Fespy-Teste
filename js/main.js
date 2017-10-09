@@ -1,57 +1,44 @@
-// $('.equipe-home .container > :first').addClass('active');
 
 
-// (function(){
+// Debounce do Lodash
+debounce = function(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
 
-// function iniSlide(){
+// Animação ao Scroll
 
-// 	var activeSlide = $('.slide_item.active'),
-// 		nextSlide = activeSlide.next();
+(function(){
+	var $target = $('[data-anime="scroll"]'),
+			animationClass = 'animate',
+			offset = $(window).height() * 3/4;
 
-// 	if(nextSlide.length == 0){
-// 		nextSlide = $('.equipe-home .container > :first');
-// 	}
+	function animeScroll() {
+		var documentTop = $(document).scrollTop();
+		$target.each(function(){
+			var $this = $(this);
+			var itemTop = $this.offset().top;
+			if (documentTop > itemTop - offset) {
+				$this.addClass(animationClass);
+			} else {
+				$this.removeClass(animationClass);
+			}
+		});
+	}
 
-// 	activeSlide.removeClass('active');
-// 	nextSlide.addClass('active');
-// }
+	animeScroll();
 
-// setInterval(iniSlide, 6000);
-
-// })();
-
-
-Visibility.onVisible(function(){
-
-	setInterval(function () {
-		$(".intro-home .titulo-2").addClass("active");
-	}, 800);
-
-	setTimeout(function () {
-		$(".intro-home .align-3").addClass("active");
-	}, 1800);
-
-	setTimeout(function () {
-		$(".intro-home .align-2").addClass("active");
-	}, 1400);
-});
-
-
-// MENU MOBILE //
-$('.mobile-btn').click(function(){
-	$(this).toggleClass('active'),
-	$('.nav').toggleClass('active');
-});
-
-
-
-
-// MENU DESKTOP //
-$('.pdes-btn').click(function(){
-	$(this).toggleClass('active'),
-	$('.menu-pdes').toggleClass('active'),
-	$('.des-1').toggleClass('active'),
-	$('.des-2').toggleClass('active'),
-	$('.des-3').toggleClass('active'),
-	$('.des-4').toggleClass('active');
-});
+	$(document).scroll(debounce(function(){
+		animeScroll();
+	}, 200));
+})();

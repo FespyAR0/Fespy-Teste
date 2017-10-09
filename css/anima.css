@@ -1,60 +1,96 @@
+.noticias .titulo-1 h1{
+	opacity: 0;
+}
 
-.js .intro-home .titulo-2{ 
-	opacity: 0; 
-	transform: translate3d(0,50px,0);
+.noticias .titulo-1.animate h1{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+	transition: 1.5s;
+}
+
+.noticias .titulo-1 span{
+	opacity: 0;
+	transform: translate3d(0,-60px,0);
+}
+
+.noticias .titulo-1.animate span{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+	transition: 1.5s;
+}
+
+.valores .titulo-1 h1, .projetos .titulo-1 h1{
+	opacity: 0;
+	transform: translate3d(-200px,0,0);
+	transition: 1.5s;
+}
+
+.valores .titulo-1 span, .projetos .titulo-1 span{
+	opacity: 0;
+	transform: translate3d(-200px,0,0);
+	transition: 1.5s;
+}
+
+.valores .titulo-1.animate h1, .projetos .titulo-1.animate h1{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+	transition: 1.2s;
+}
+
+.valores .titulo-1.animate span, .projetos .titulo-1.animate span{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+	transition: 1.5s;
+}
+
+.valores-item .valor-titulo, .valores-item p{
+	opacity: 0;
+	transition: 1s;
+}
+
+.valores-item.animate .valor-titulo, .valores-item.animate p{
+	opacity: 1;
 	transition: 2s;
 }
 
-.js .intro-home .titulo-2.active{
-	transform: translate3d(0,0,0);
+.projetos-items {
+	opacity: 0;
 	transition: 1s;
+}
+
+.projetos-items.animate{
 	opacity: 1;
- }
-
-.js .intro-home .align-3{ 
-	opacity: 0;  
-	transform: translate3d(50px,0,0); 
-	transition: 1.5s;
-}
-
-.js .intro-home .align-3.active{ 
-	opacity: 1;  
-	transform: translate3d(0,0,0); 
-	transition: 1s;
-}
-
-.js .intro-home .align-2{ 
-	opacity: 0;  
-	transform: translate3d(-50px,0,0); 
-	transition: 1.5s;
-}
-
-.js .intro-home .align-2.active{ 
-	opacity: 1;  
-	transform: translate3d(0,0,0); 
 	transition: 1s;
 }
 
 
-[data-anime="flutuar"] {
-    
-    animation: flutuar 3s ease-in-out 0s infinite;
+.parceiros .titulo-1{
+	opacity: 0;
+	transform: translate3d(200px,0,0);
+	transition: 1.5s;
 }
 
-@keyframes flutuar {
-  from{
-      transform: translate3d(0px,-15px,0px);
-  }
-
-    50% {
-        transform: translate3d(0px,15px,0px);
-    }
-
-  75%, {
-    transform: translate3d(0px,-15px,0px);
-  }
-    
-    100% {transform: translate3d(0px,-15px,0px);}
+.parceiros .titulo-1.animate{
+	opacity: 1;
+	transform: translate3d(0,0,0);
+	transition: 1.5s;
 }
 
-
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+ 
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+  display: none;
+}
+ 
+::-webkit-scrollbar-track-piece  {
+  background-color: rgba(255,255,255,.9);
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #009933;
+}
