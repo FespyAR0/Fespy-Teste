@@ -43,15 +43,6 @@
 	transition: 1.5s;
 }
 
-.valores-item .valor-titulo, .valores-item p{
-	opacity: 0;
-	transition: 1s;
-}
-
-.valores-item.animate .valor-titulo, .valores-item.animate p{
-	opacity: 1;
-	transition: 2s;
-}
 
 .projetos-items {
 	opacity: 0;
