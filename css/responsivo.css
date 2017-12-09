@@ -9,5 +9,9 @@
 @media only screen and (max-width: 767px) {
 
 
+}
+
+/*Estilo para smartphone*/
+@media only screen and (max-width: 1278px) {
 
 }
