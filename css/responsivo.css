@@ -33,10 +33,10 @@
 
 
 
-.des-1.active{transition: 0.3s ease-in-out;     transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,1);}
-.des-2.active{transition: 1s ease-in-out;     transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,1);}
-.des-3.active{transition: 1.7s ease-in-out;     transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,1);}
-.des-4.active{transition: 2.4s ease-in-out; transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,1);}
+.des-1.active{transition: 0.3s ease-in-out;     transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,.9);}
+.des-2.active{transition: 1s ease-in-out;     transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,.9);}
+.des-3.active{transition: 1.7s ease-in-out;     transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,.9);}
+.des-4.active{transition: 2.4s ease-in-out; transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,.9);}
 
 .des-1{transform: translate3d(0%,-100%,0);    opacity: 0; visibility: hidden; background: rgba(255,255,255,0);}
 .des-2{transform: translate3d(0%,-100%,0); opacity: 0; visibility: hidden; background: rgba(255,255,255,0);}
@@ -99,13 +99,15 @@
 
 .menu-wrapper h2{
     font-size: 24px;
+    font-weight: 700;
     color: white;
     text-align: center;
 }
 
 .menu-wrapper span{
-    margin: 40px 0;
+    margin: 40px auto;
     font-size: 14px;
+    max-width: 300px;
     padding: 0px 30px;
     line-height: 1.5em;
     display: block;
@@ -226,7 +228,7 @@
     	transition: 1.3s;
         z-index: 5;
         overflow-y: hidden;
-        background-color: rgba(0,0,0,.0);
+        background-color: rgba(0,0,0,.6);
     }
 
     .nav.active{
@@ -236,7 +238,7 @@
     }
 
     .logo{ 
-        margin: 20px 20px;
+        margin: 12.5px 20px;
         height: auto; 
         width: 50px; 
         float: left;
@@ -254,7 +256,7 @@
     }
 
     .menu a {
-   	font-size: 36px;
+   	font-size: 16px;
     clear: right;
     text-decoration: none;
     color: white;
