@@ -72,7 +72,7 @@
 .pdes-btn.active {
   right: 20px;
   top: 10px;
-  padding: 40px 20px;
+  padding: 40px 60px 40px 20px;
   border-top-color: transparent;
 }
 
@@ -141,27 +141,104 @@
 
 .menu-pdes{ display: none; }
 
+
+/* GERAL */
+
+.titulo-1{ 
+    font-size: 36px;
+ }
+
+
+.call_to { 
+    margin: 40px auto;
+    text-align: center;
+    padding: none;
+ }
+
+.call_to a{
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 2px solid rgba(255,255,255,.8);
+    font-size: 15px;
+    color:rgba(255,255,255,.9);
+    font-weight: 600;
+}
+
+
+
+
+
+/* FECHA GERAL */
+
+
+
+/* SLIDE */
+
+.slide .titulo-1{ padding-top: 350px; }
+
+
+.slide{   
+    height: 800px;
+    background: url(../img/bg-slider2.jpg)no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+
+.slide_item p{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.slide_item span{
+    margin: 20px 0px;
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.slide_item span:before{
+    content: 'R$';
+    font-size: 12px;
+    margin: 10px 0px;
+    position: absolute; 
+    top: -10px;
+    left: -20px;
+}
+
+
+
+
+
+/* FECHA SLIDE */
+
+
+
 /* MENU - MOBILE */
 
     .nav{
         position: fixed;
         width: 100vw;
-    	height: 60px;
+    	height: 80px;
     	transition: 1.3s;
         z-index: 5;
         overflow-y: hidden;
-        background-color: rgba(0,0,0,1);
+        background-color: rgba(0,0,0,.0);
     }
 
     .nav.active{
     	height: 100%;
         transition: 2s;
+        background-color: rgba(0,0,0,.9);
     }
 
     .logo{ 
         margin: 20px 20px;
         height: auto; 
-        width: 100px; 
+        width: 50px; 
         float: left;
     }
 
@@ -187,7 +264,7 @@
 }
 
     .mobile-btn{
-    margin: 22.5px 20px 15px 20px;
+    margin: 32.5px 20px 15px 20px;
     height: 30px;
     width: 30px;
     display: block;
