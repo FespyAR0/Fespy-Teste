@@ -3,231 +3,180 @@ img { /* Imagem fluída */
 	max-width: 100;
 }
 
-* { font-family: 'Montserrat'; }
+body {  
+	background-size: cover; 
+	background-attachment: fixed;
+	box-sizing: border-box; 
+	font-family: 'Montserrat', sans-serif;}
 
-body{  
-background: url(../img/bg/bg3-eap.jpg) no-repeat;
-background-size: cover;
-background-attachment: fixed;
-}
-a {
-	text-decoration: none;
-}
-
-/**
- * Remove list-style
- */ 
-
-ol, ul {
-	list-style: none;
+h1 { 
+	font-size: 60px;
+	line-height: 2em;
+	text-transform: uppercase;
 }
 
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
+p{
+	font-size: 21px;
+	font-weight: 100; 
+	line-height: 2em; 
 }
 
-.titulo-1{padding: 20px 0px 60px 0px;}
-.titulo-1 h1{
-	text-align: center; 
-	text-transform: uppercase; 
-	color: #212a56;
-	font-size: 27px; 
+
+.container{ max-width: 1200px; margin: 0 auto; }
+
+
+.call_to { 
+	margin: 0px auto;
+	text-align: center;
+	padding: none;
+ }
+
+.call_to a{
+	display: inline-block;
+	width: 350px;
+	font-size: 24px;
+	color:rgba(255,255,255,.9);
+	font-weight: 300;
 }
 
-.titulo-1 h1:after{
+.call_to a:after, .call_to a:before{
 	content: '';
 	display: block;
-	margin: 15px auto;
-	width: 300px;
-	height: 2px;
-	background: #111111; 
+	margin: 10px auto;
+	height: 1px;
+	width: 0px;
+	background: currentColor;
+	transition: .5s;
 }
 
-.call_to-1, .call_to-2 { padding-top: 60px; margin: 0 auto; text-align: center; }
-
-.call_to-1 a{
-    font-size: 17px;
-    letter-spacing: 0.1em;
-    padding: 15px 30px;
-    border: 2px solid rgba(255,255,255,.9);  
-    color: rgba(255,255,255,.9); ; 
-    position: relative; 
-    transition: .7s;
-    overflow: hidden;
-    z-index: 1;
-    font-weight: 400;
-    text-transform: uppercase;
-    transition: .5s;
-  }
-
-  .call_to-2 a{
-    font-size: 17px;
-    letter-spacing: 0.1em;
-    padding: 15px 30px;
-    border: 2px solid #212a56;  
-    color: #212a56; 
-    position: relative; 
-    transition: .7s;
-    overflow: hidden;
-    z-index: 1;
-    font-weight: 400;
-    text-transform: uppercase;
-    transition: .5s;
-  }
+.call_to a:hover::after, .call_to a:hover::before{
+	width: 300px;
+	transition: .5s;
+}
 
 
-  .call_to-1 a:hover{
-  	border: 2px solid #f1bc33;  
-    color: #f1bc33;
-    transition: .5s;
-  }
+.call_to p{
+	color:rgba(255,255,255,.9);
+	font-weight: 100;
+	margin: 20px 0px 40px 0px;
+}
 
 
-   .call_to-2 a:hover{
-   		background: #212a56; 
-	  	border: 2px solid #212a56; 
-	    color: white;
-	    transition: .5s;
-	  }
+
+body.loaded #loading-screen{visibility: hidden; transition: 2s; opacity: 0;}
 
 
-/* TOP - MENU */
-.top-menu{
-	padding: 20px 0px;
+#loading-screen{
+	height: 100vh;
 	width: 100%;
-	background: #131b38;
-	color: white;
-	font-weight: 300;
-	clear: left;
+	background: url(../img/bg-loading.svg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: fixed; z-index: 1000000000;
+	opacity: 1;
+	transition: all 1s;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+#loading-screen img{
+	width: 30%;
+    opacity: 1;
+    transition: 1s;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+
+#loading-screen span{
+	font-size: 16px;
+	line-height: 2em;
+	font-weight: 600;
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	color: rgba(255,255,255,.8);
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+
+.loader{ 
+	text-align: center; 
+	max-width: 400px; 
+	display: block; 
+	margin: 0 auto;  
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 40%;
+}
+
+.loader span{ padding: 25px 0; }
+
+.loader div{
+	float: left;
+    border: 10px solid #000000;
+    border-top: 10px solid rgba(255,255,255,.8); 
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.web{	
+	position: absolute;
+	clear: both;
+	bottom: 10%;
+	left: 0;
+	right: 0;
 	font-size: 15px;
 }
 
-.top-menu .top-links{
-	float: right;
-}
 
-.top-menu .top-links a {
-	float: left;
-	padding: 0px 5px;
-}
-
-.top-menu .top-links img{
-	height: 25px;
-	width: 25px;
-}
-
-/* FECHA TOP - MENU */
-
-
-/* MENU - NAV */
-.menu-nav{ text-align: center; padding-top: 10px;  padding-bottom: 60px; clear: both;}
-
-.menu-nav ul li{ padding: 15px 0px; margin-right: 25px; display: inline-block;  }
-
-.menu-nav a{ color: white; font-size: 15px; text-transform: uppercase; font-weight: 500;}
-
-.menu-nav a:hover{ color: #f1bc33; }
-
-/* INTRODUÇÃO */
-.intro-home{ padding: 80px 0px; position: relative; }
-
-.intro-home h1{
+.slide{
 	width: 100%;
-	padding: 30px 0px;
-	background: #f1bc33;
-	text-align: center;
-	color: #212a56;
-	font-size: 27px;
-	float: left;
-}
+	height: 1000px;
+	background: url(../img/bg-slide.svg)no-repeat;
+	background-size: cover;
 
-.desconto-img img{
-	height: 300px;
-}
-
-.estudantes-img img{
-	height: 400px;
-	margin: 0 auto;
 }
 
 
-
-
-.contato-intro{ 
-	padding: 0.8em auto; 
-	width: 100%; 
-	margin: 0 auto;
-	clear: both;
+/* MENU MOBILE - OFF*/
+.nav {
+    background-color: rgba(0,0,0,.6);
+    width: 100%;
 }
 
-.contato-intro img{
-	height: 40px;
-	max-width: 40px;
-	margin: 0 auto;
+.menu {display: none;}
+
+.logo{ 
+        margin: 25px 40px;
+        height: auto; 
+        width: 240px; 
+        float: left;
+    }
+
+#toggle {
+    display: none;
 }
 
-.contato-span-intro{ 
-	margin: 10px 0px 0px 40px;
-	float: left;
-	}
+/* MENU MOBILE - OFF*/
 
 
-.contato-span-intro span{
-	margin: 10px 10px;
-	font-weight: 300;
-	float: left;
-	color: white;
-	text-align: center;
-	font-size: 17px;
-}
 
-/* FECHA INTRO */
 
-/* COMPROMENTIMENTO - HOME */
 
-.comproment-home{ padding: 60px 0px; 
-	background: #f2f2f2;
-}
-
-.comproment-items{ clear: both;  }
-
-.comproment-items img{
-	max-width: 200px;
-	margin: 0px auto 20px auto;
-}
-
-.comproment-items h2{
-	font-size: 21px;
-	text-align: center;
-	color: #212a56;
-	margin-bottom: 10px;
-}
-
-.comproment-items p{
-	font-size: 14px;
-	line-height: 1.5em;
-	color: #555555;
-	max-width: 200px;
-	display: block;
-	margin: 0 auto;
-}
-
-.missao-home p{text-align: left;}
-.visao-home p{text-align: center;}
-.valores-home p{text-align: right;}
-
-.comproment-home .call_to-2{
-	clear: both;
-	padding-top: 100px;
-	text-align: right;
-}
-
-.call_to-2 p{
-	float: left;
-	font-size: 17px;
-	font-weight: 500;
-	color: #212a56;;
-}

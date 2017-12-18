@@ -1,0 +1,111 @@
+.js #loading-screen img.anima-f{
+    opacity: 1;
+    transition: 1s;
+    top: 40%;
+}
+
+
+.js #loading-screen img.anima{
+  transition: all 2s;
+  opacity: 1;
+  transform: translate3d(0,0,0);
+}
+
+.js .loader div{
+  opacity: 0;
+  transition: 1s;
+}
+
+.js .loader div.anima{
+  opacity: 1;
+  transition: 2s;
+}
+
+.js .loader span{
+  opacity: 0;
+  transition: 1s;
+}
+
+.js .loader span.anima{
+  opacity: 1;
+  transition: 1s;
+}
+
+.js .web{
+  opacity: 0;
+  transform: translate3d(0,-100px,0);
+  transition: 1s;
+}
+
+.js .web.anima{
+  opacity: 1;
+  transform: translate3d(0,0,0);
+  transition: 1s;
+}
+
+
+
+
+
+
+
+
+/* MOUSE SCROLL */
+.mouse{
+  position: fixed;
+  width: 20px;
+  height: 40px;
+  border: 2px solid rgba(255,255,255,.8);;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  border-radius: 50px;
+}
+
+.mouse:before{
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  height: 10px;
+  width: 3px;
+  background: rgba(255,255,255,.8);
+  position: relative;
+  animation-name: mouse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes mouse {
+  from {
+    top: 0px;
+  }
+  to {
+    top: 10px;
+  }
+}
+
+
+
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+ 
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment  {
+  display: none;
+}
+ 
+::-webkit-scrollbar-track-piece  {
+  background-color: rgba(255,255,255,.9);
+}
+ 
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #111111;
+}
