@@ -17,7 +17,7 @@ function iniSlide(){
 	nextSlide.addClass('active');
 }
 
-setInterval(iniSlide, 10000);
+setInterval(iniSlide, 12000);
 
 })();
 
@@ -82,6 +82,10 @@ $(document).ready(function() {
         $('.loader span').removeClass('anima');
     }, 3200);
 
+
+    setTimeout(function(){
+        $('.celular').addClass('anima');
+    }, 6000);
 
 
     

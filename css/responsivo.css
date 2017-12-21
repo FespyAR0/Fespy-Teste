@@ -33,10 +33,10 @@
 
 
 
-.des-1.active{transition: 0.3s ease-in-out;     transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,.9);}
-.des-2.active{transition: 1s ease-in-out;     transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,.9);}
-.des-3.active{transition: 1.7s ease-in-out;     transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,.9);}
-.des-4.active{transition: 2.4s ease-in-out; transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,.9);}
+.des-1.active{transition: 0.3s ease-in-out;     transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,1);}
+.des-2.active{transition: 1s ease-in-out;     transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,1);}
+.des-3.active{transition: 1.7s ease-in-out;     transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,1);}
+.des-4.active{transition: 2.4s ease-in-out; transform: translate3d(0,-15%,0);     opacity: 1; visibility: visible; background: rgba(0,0,0,1);}
 
 .des-1{transform: translate3d(0%,-100%,0);    opacity: 0; visibility: hidden; background: rgba(255,255,255,0);}
 .des-2{transform: translate3d(0%,-100%,0); opacity: 0; visibility: hidden; background: rgba(255,255,255,0);}
@@ -161,7 +161,7 @@
     padding: 10px 30px;
     border-radius: 30px;
     border: 2px solid rgba(255,255,255,.8);
-    font-size: 15px;
+    font-size: 10px;
     color:rgba(255,255,255,.9);
     font-weight: 600;
 }
@@ -181,18 +181,20 @@
 
 .slide{   
     height: 800px;
-    background: url(../img/bg-slider2.jpg)no-repeat;
+
+/*    background: url(../img/bg-slider2.jpg)no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 
 }
 
 
 
 .slide_item p{
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
-    margin: 15px 0;
+    max-width: 250px;
+    text-align: center;
 }
 
 .slide_item span{
@@ -222,13 +224,12 @@
 /* MENU - MOBILE */
 
     .nav{
-        position: fixed;
+        position: absolute;
         width: 100vw;
     	height: 80px;
     	transition: 1.3s;
         z-index: 5;
         overflow-y: hidden;
-        background-color: rgba(0,0,0,.6);
     }
 
     .nav.active{
@@ -323,14 +324,14 @@
 
 
 	#loading-screen span{
-	font-size: 12px;
+	font-size: 16px;
 
 }
 
 
 .loader{ 
 	text-align: center; 
-	max-width: 250px; 
+	max-width: 200px; 
 	display: block; 
 	margin: 0 auto;  
 	position: absolute;
