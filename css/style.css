@@ -1,45 +1,38 @@
 @font-face{
-	font-family: 'Montserrat';
-	src: url(fonts/Montserrat-SemiBold.ttf);
-	font-weight: 500;
+	font-family: Montserrat-SemiBold;
+	src: url(../fonts/Montserrat-SemiBold.ttf);
 }
 
 @font-face{
-	font-family: 'Montserrat';
-	src: url(fonts/Montserrat-Bold.ttf);
-	font-weight: 600;
+	font-family: Montserrat-Bold;
+	src: url(../fonts/Montserrat-Bold.ttf);
 }
 
 @font-face{
-	font-family: 'Montserrat';
-	src: url(fonts/Montserrat-Extra-Bold.ttf);
-	font-weight: 700;
+	font-family: Montserrat-ExtraBold;
+	src: url(../fonts/Montserrat-ExtraBold.ttf);
 }
 
 @font-face{
-	font-family: 'Montserrat';
-	src: url(fonts/Montserrat-Black.ttf);
-	font-weight: 800;
+	font-family: Montserrat-Black;
+	src: url(../fonts/Montserrat-Black.ttf);
 }
 
 
 @font-face{
-	font-family: 'Roboto Condensed';
-	src:url(fonts/RobotoCondensed-Light.ttf);
-	font-weight: 300;
+	font-family: Roboto Condensed-Light;
+	src:url(../fonts/RobotoCondensed-Light.ttf);
 }
 
 @font-face{
-	font-family: 'Roboto Condensed';
-	src:url(fonts/RobotoCondensed-Light.ttf);
-	font-weight: 300;
+	font-family: Roboto Condensed-Normal;
+	src:url(../fonts/RobotoCondensed-Regular.ttf);
 }
 
 
 @font-face{
-	font-family: 'Roboto Condensed';
-	src:url(fonts/RobotoCondensed-Bold.ttf);
-	font-weight: bold;
+	font-family: Roboto Condensed-Bold;
+	src:url(../fonts/RobotoCondensed-Bold.ttf);
 }
 
 
@@ -55,16 +48,16 @@ body {
 	background: black;
 	background-size: cover;
 	box-sizing: border-box; 
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: Roboto Condensed-Normal;
 	}
 
-h1{ 
-	font-family: 'Montserrat', sans-serif;
-}
 
 
-h2{ 	font-size: 24px;
-font-weight: 600; }
+h2{ 	
+	font-size: 24px;
+	font-family: Montserrat-SemiBold;
+
+ }
 
 p{
 	font-size: 15px;
@@ -81,8 +74,8 @@ p{
 .titulo-1{
 	font-size: 80px;
 	color: #e20047;
-	font-weight: 800;
 	line-height: 1em;
+	font-family: Montserrat-Black;
 }
 
 .call{ 
@@ -90,7 +83,7 @@ p{
 	padding: 15px 0px;
 	display: block;
 	text-align: center;
-	font-weight: 600;
+	font-family: Roboto Condensed-Bold;
 	width: 200px; 
 	color: #e20047;
 	border: 2px solid #e20047;
@@ -323,14 +316,14 @@ body.loaded #loading-screen{visibility: hidden; transition: 1s; opacity: 0;}
 }
 
 .intro-sec .titulo-1{
-	font-weight: 600;
+	font-family: Montserrat-ExtraBold;
 	color:#fff;
 	margin-bottom: 40px;
 }
 
 .intro-sec .titulo-1 span{
 	color: #e20047;
-		font-weight: 800;
+	font-size: 100px;
 }
 
 
@@ -342,7 +335,7 @@ body.loaded #loading-screen{visibility: hidden; transition: 1s; opacity: 0;}
 
 .intro-sec .call{ 
 	float: left;
-	 margin-left: 30px; 
+	 margin-right: 30px; 
 	 color: #e20047;
 	 border: 2px solid #e20047; 
 }
@@ -406,8 +399,7 @@ margin: 0 auto;}
 
 
 .celular p{
-	font-family: 'Montserrat';
-	font-weight: 700;
+	font-family: Montserrat-Bold;
 	font-size: 24px;
 	color: #fff;
 }
@@ -452,9 +444,7 @@ margin: 0 auto;}
 
 
 .responsivo-sec h2{
-
 	padding: 60px 0 20px 0;
-	font-weight: 700;
 }
 
 .responsivo-sec p{
@@ -559,7 +549,7 @@ margin: 0 auto;}
 
 
 .depoimentos-sec{
-	background: #e20047;
+	background: #000000;
 	padding: 100px;
 	position: relative;
 	overflow: hidden;
@@ -632,6 +622,7 @@ margin: 0 auto;}
 .img-depoimento{ clear: both; padding: 20px 0 20px 0px;  }
 
 .img-depoimento video{
+	margin-top: 20px;
 	background: black;
 	max-width: 100%;
 }
@@ -660,7 +651,7 @@ margin: 0 auto;}
 	display: block;
 	text-align: center;
 	font-size: 17px;
-	font-weight: bold;
+	font-family: Roboto Condensed-Bold;
 	color: rgba(255,255,255,.9);
 
 }
@@ -711,10 +702,9 @@ margin: 0 auto;}
 
 .div-footer h2{
 	color: rgba(255,255,255,.8);
-	font-family: 'Roboto Condensed';
+	font-family: Roboto Condensed-Normal;
 	font-size: 15px;
 	text-transform: uppercase;
-	font-weight: normal;
 }
 
 .div-footer h2:after{
