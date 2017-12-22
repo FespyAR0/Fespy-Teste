@@ -1,23 +1,23 @@
 
-$('.slide > :first').addClass('active');
+$('.dep-slide > :first').addClass('active');
 
 
 (function(){
 
 function iniSlide(){
 
-	var activeSlide = $('.slide_item.active'),
+	var activeSlide = $('.depoimento-item.active'),
 		nextSlide = activeSlide.next();
 
 	if(nextSlide.length == 0){
-		nextSlide = $('.slide > :first');
+		nextSlide = $('.dep-slide > :first');
 	}
 
 	activeSlide.removeClass('active');
 	nextSlide.addClass('active');
 }
 
-setInterval(iniSlide, 12000);
+setInterval(iniSlide, 8000);
 
 })();
 
@@ -85,7 +85,7 @@ $(document).ready(function() {
 
     setTimeout(function(){
         $('.celular').addClass('anima');
-    }, 6000);
+    }, 1000);
 
 
     
